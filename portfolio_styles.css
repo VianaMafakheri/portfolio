@@ -36,9 +36,7 @@ header {
 
 .header-image {
     width: 90px;
-    /* کاهش سایز تصویر */
     height: 90px;
-    /* کاهش سایز تصویر */
     border-radius: 100%;
     object-fit: cover;
     border: 3px solid white;
@@ -47,18 +45,15 @@ header {
 
 .header-text {
     text-align: right;
-    /* راست چین کردن متن */
 }
 
 .header-text h1 {
     font-size: 22px;
-    /* کاهش اندازه عنوان */
     margin-bottom: 5px;
 }
 
 .header-text p {
     font-size: 14px;
-    /* کاهش اندازه توضیحات */
     font-weight: 400;
     color: #B9B4C7;
 }
@@ -76,7 +71,6 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 16px;
-    /* کاهش اندازه متن منو */
     font-weight: bold;
     transition: color 0.3s, transform 0.3s;
 }
@@ -91,9 +85,7 @@ nav ul li a:hover {
     color: #FAF0E6;
     text-align: center;
     padding: 90px 20px;
-    /* کاهش فاصله بالای هدر */
     font-size: 24px;
-    /* کاهش اندازه متن */
     font-weight: bold;
     animation: fadeIn 1s ease-in-out;
     margin-bottom: 60px;
@@ -115,7 +107,6 @@ nav ul li a:hover {
 /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
 /* } */
 
-/* باقی استایل‌ها به همان صورت باقی می‌مانند */
 
 /* .hero-image {
     width: 150px;
@@ -339,7 +330,6 @@ footer {
 
 
 
-/* انیمیشن‌ها */
 @keyframes progress {
     from {
         stroke-dashoffset: 339.292;
@@ -347,7 +337,6 @@ footer {
 
     to {
         stroke-dashoffset: 339.292 * (1 - 0.7);
-        /* 70% برای Golang */
     }
 }
 
@@ -358,7 +347,6 @@ footer {
 
     to {
         stroke-dashoffset: 339.292 * (1 - 0.7);
-        /* 70% برای C++ */
     }
 }
 
@@ -369,7 +357,6 @@ footer {
 
     to {
         stroke-dashoffset: 339.292 * (1 - 0.5);
-        /* 50% برای Python */
     }
 }
 
@@ -380,11 +367,9 @@ footer {
 
     to {
         stroke-dashoffset: 339.292 * (1 - 0.3);
-        /* 30% برای HTML & CSS */
     }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     header {
         padding: 15px 0;
@@ -409,7 +394,6 @@ footer {
     }
 }
 
-/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
