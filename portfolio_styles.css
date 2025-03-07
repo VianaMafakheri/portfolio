@@ -1,0 +1,445 @@
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Vazir', sans-serif;
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF0E6;
+    color: #352F44;
+    animation: fadeIn 1.5s ease-out;
+}
+
+header {
+    background-color: #352F44;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slideInFromTop 1s ease-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-image {
+    width: 90px;
+    /* کاهش سایز تصویر */
+    height: 90px;
+    /* کاهش سایز تصویر */
+    border-radius: 100%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-text {
+    text-align: right;
+    /* راست چین کردن متن */
+}
+
+.header-text h1 {
+    font-size: 22px;
+    /* کاهش اندازه عنوان */
+    margin-bottom: 5px;
+}
+
+.header-text p {
+    font-size: 14px;
+    /* کاهش اندازه توضیحات */
+    font-weight: 400;
+    color: #B9B4C7;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 50;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    /* کاهش اندازه متن منو */
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #B9B4C7;
+    transform: scale(1.1);
+}
+
+#hero {
+    background: linear-gradient(to right, #5C5470, #FAF0E6);
+    color: #FAF0E6;
+    text-align: center;
+    padding: 90px 20px;
+    /* کاهش فاصله بالای هدر */
+    font-size: 24px;
+    /* کاهش اندازه متن */
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
+    margin-bottom: 60px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* .hero-image {
+    width: 120px; /* کاهش سایز تصویر پروفایل */
+/* height: 120px; /* کاهش سایز تصویر پروفایل */
+/* border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white; */
+/* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+/* } */
+
+/* باقی استایل‌ها به همان صورت باقی می‌مانند */
+
+/* .hero-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+} */
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #B9B4C7;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slideInFromBottom 1s ease-out forwards;
+}
+
+h2 {
+    font-family: 'Shabnam', sans-serif;
+    font-weight: 700;
+    color: #352F44;
+    margin-bottom: 20px;
+    font-size: 28px;
+    transition: color 0.3s ease;
+}
+
+h2:hover {
+    color: #5C5470;
+}
+
+p {
+    font-family: 'Sahel', sans-serif;
+    font-weight: 400;
+    color: #5C5470;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+
+
+footer {
+    font-family: 'Gandom', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    background: #352F44;
+    color: white;
+    margin-top: 40px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.skill p {
+    font-size: 18px;
+    color: #352F44;
+    margin-top: 10px;
+}
+
+.circle {
+    transform: rotate(-90deg);
+}
+
+.skill .percentage {
+    font-size: 18px;
+    color: #352F44;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+.golang {
+    animation: progress 2s ease-out forwards;
+}
+
+.cpp {
+    animation: cpp-progress 2s ease-out forwards;
+}
+
+.python {
+    animation: python-progress 2s ease-out forwards;
+}
+
+.html-css {
+    animation: html-css-progress 2s ease-out forwards;
+}
+
+
+
+.contact-form {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.contact-form label {
+    font-size: 18px;
+    color: #352F44;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #B9B4C7;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #352F44;
+    background-color: #FAF0E6;
+    box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #5C5470;
+}
+
+.contact-form button.submit-btn {
+    background-color: #5C5470;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button.submit-btn:hover {
+    background-color: #352F44;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+
+
+
+#social {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#social h2 {
+    font-size: 28px;
+    color: #352F44;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 30px;
+    color: #352F44;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    color: #5C5470;
+}
+
+.social-icon i {
+    font-size: 36px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* انیمیشن‌ها */
+@keyframes progress {
+    from {
+        stroke-dashoffset: 339.292;
+    }
+
+    to {
+        stroke-dashoffset: 339.292 * (1 - 0.7);
+        /* 70% برای Golang */
+    }
+}
+
+@keyframes cpp-progress {
+    from {
+        stroke-dashoffset: 339.292;
+    }
+
+    to {
+        stroke-dashoffset: 339.292 * (1 - 0.7);
+        /* 70% برای C++ */
+    }
+}
+
+@keyframes python-progress {
+    from {
+        stroke-dashoffset: 339.292;
+    }
+
+    to {
+        stroke-dashoffset: 339.292 * (1 - 0.5);
+        /* 50% برای Python */
+    }
+}
+
+@keyframes html-css-progress {
+    from {
+        stroke-dashoffset: 339.292;
+    }
+
+    to {
+        stroke-dashoffset: 339.292 * (1 - 0.3);
+        /* 30% برای HTML & CSS */
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        padding: 40px 15px;
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
